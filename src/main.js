@@ -2,4 +2,20 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 
-createApp(App).use(router).mount("#app");
+import { Amplify } from "aws-amplify";
+import "@aws-amplify/ui-vue";
+import aws_exports from "./aws-exports";
+
+Amplify.configure(aws_exports);
+
+import "vuetify/styles";
+import { createVuetify } from "vuetify";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
+
+const vuetify = createVuetify({
+  components,
+  directives,
+});
+
+createApp(App).use(router).use(vuetify).mount("#app");

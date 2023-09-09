@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/forms": {
+      "name": "/forms",
+      "lambdaFunction": "formfunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

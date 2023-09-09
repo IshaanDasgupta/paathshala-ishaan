@@ -1,0 +1,14 @@
+{
+  "resourceName": "formsdb",
+  "tableName": "formsdb",
+  "partitionKey": {
+    "fieldName": "name",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "year",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
